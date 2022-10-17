@@ -17,14 +17,14 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
-	html {
+	/* html {
 		color-scheme: dark;
 	}
 
 	body {
 		background: black;
 		color: white;
-	}
+	} */
 }
 
 :root {
