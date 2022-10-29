@@ -4,6 +4,7 @@ body {
 	margin: 0;
 
 	/* background: #E5E5E5; */
+	background: #F5F6F8;
 	color: var(--black);
 	font-family: "Open Sans", sans-serif;
 }
