@@ -1,15 +1,22 @@
 import { GetStaticProps } from "next";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from 'axios';
 import { Button, Htag, Ptag, Rating, Tag } from "../components";
 import { withLayout } from "../layout/Layout";
 import { MenuItem } from "../interfaces/menu.interface";
+import { useRouter } from "next/router";
 
 function Home({ menu }: HomeProps): JSX.Element {
   const [rating, setRating] = useState<number>(4);
+  // const router = useRouter();
+  // useEffect(() => {
+  //   if (router.asPath == `/`) {
+  //     router.replace('/courses/');
+  //   }
+  // }, []);
 
   return (
-    <>     
+    <>
       <Htag tag='h1'>Greetings</Htag>
       <Button appearance="primary" arrow="right">Button</Button>
       <Button appearance="ghost" arrow="down">Button</Button>
