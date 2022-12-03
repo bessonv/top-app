@@ -28,12 +28,12 @@
 
 @media (max-width: 765px) {
 	.wrapper {
+		gap: 10px;
 		grid-template-areas:
 			"header"
 			"body"
 			"footer";
 		grid-template-columns: minmax(320px, 1fr);
-		gap: 10px;
 	}
 
 	.sidebar {

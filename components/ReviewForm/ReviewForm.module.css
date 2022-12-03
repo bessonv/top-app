@@ -1,11 +1,10 @@
 .reviewForm {
-	font-size: 14px;
-	line-height: 24px;
-
 	display: grid;
-	grid-template-columns: [start] auto 1fr auto [end];
-	gap: 20px 30px;
 	align-items: center;
+	font-size: 14px;
+	gap: 20px 30px;
+	grid-template-columns: [start] auto 1fr auto [end];
+	line-height: 24px;
 }
 
 .description,
@@ -23,13 +22,13 @@
 
 .rating {
 	display: grid;
-	grid-template-columns: auto 1fr;
 	gap: 20px;
+	grid-template-columns: auto 1fr;
 }
 
 .panel {
-	padding: 20px;
 	position: relative;
+	padding: 20px;
 	border-radius: 5px;
 	margin-top: 20px;
 }
@@ -61,9 +60,11 @@
 	.reviewForm {
 		grid-template-columns: [start] 1fr 1fr [end];
 	}
+
 	.title {
 		justify-self: normal;
 	}
+
 	.rating {
 		grid-column: start / end;
 	}
