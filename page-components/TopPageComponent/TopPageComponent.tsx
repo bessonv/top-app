@@ -21,11 +21,11 @@ export const TopPageComponent = ({ page, products, firstCategory}: TopPageCompon
     <div className={styles.wrapper}>
       <div className={styles.title}>
         <Htag tag='h1'>{page.title}</Htag>
-        {products && <Tag color='gray' size='medium'>{products.length}</Tag>}
+        {products && <Tag  color='gray' size='medium' aria-label={products.length + ' элементов'}>{products.length}</Tag>}
         <Sort sort={sort} setSort={setSort}/>
       </div>
-      <div>
-        {sortedProducts && sortedProducts.map(p => (<Product layout key={p._id} product={p} />))}
+      <div role="list">
+        {sortedProducts && sortedProducts.map(p => (<Product layout key={p._id} product={p} role="listitem"/>))}
       </div>
       <div className={styles.hhTitle}>
         <Htag tag='h2'>Вакансии - {page.category}</Htag>
