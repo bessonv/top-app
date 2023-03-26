@@ -3,6 +3,9 @@
 		"stylelint-config-standard",
     "stylelint-config-idiomatic-order"
 	],
+	"ignoreFiles": [
+		"out/**/*.css"
+	],
 	"plugins": [
 		"stylelint-order"
 	],
