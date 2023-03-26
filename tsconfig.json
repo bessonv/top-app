@@ -7,6 +7,7 @@
       "esnext"
     ],
     "allowJs": false,
+    "noImplicitAny": false,
     "skipLibCheck": true, // ignore node_modules errors
     "strict": true, // strict rules for ts
     "strictPropertyInitialization": false, // class property initialization
